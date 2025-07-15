@@ -26,7 +26,7 @@ Phase 4: Password Generation
 
 * Compile the tool with platform target of x64. 
 * Tool was tested against target Framework of .NET Framework 4.7.2.
-* When copying the tool's executable to the remote machine, please make sure to also copy the CommandLine.dll that is located in GoldendMSA/bin/Release or GoldendMSA/bin/Debug.
+* When copying the tool's executable to the remote machine, please make sure to also copy the CommandLine.dll that is located in GoldendMSA folder.
 
 ## Usage
 
@@ -73,8 +73,8 @@ $ GoldendMSA.exe kds --domain <domain name>
 
 Bruteforce dMSA's password:
 ```
-$ GoldendMSA.exe bruteforce -s <sid of dmsa> -k <kds root key> -d <dmsa's domain> -u <dmsa (should end with $)> -t
-$ GoldendMSA.exe bruteforce -s <sid of dmsa> -k <kds root key> -d <dmsa's domain> -u <dmsa (should end with $)> -v
+$ GoldendMSA.exe bruteforce -s <sid of dmsa> -i <kds root key id> -k <kds root key> -d <dmsa's domain> -u <dmsa (should end with $)> -t
+$ GoldendMSA.exe bruteforce -s <sid of dmsa> -i <kds root key id> -k <kds root key> -d <dmsa's domain> -u <dmsa (should end with $)> -v
 ```
 ![image](Assets/Bruteforce.jpg)
 
