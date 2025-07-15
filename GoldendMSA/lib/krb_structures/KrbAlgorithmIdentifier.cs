@@ -1,0 +1,22 @@
+﻿using Asn1;
+using System.Security.Cryptography;
+
+namespace GoldendMSA {
+    public class KrbAlgorithmIdentifier {
+
+        public Oid Algorithm { get; set; }
+        public byte[] Parameters { get; set; }
+
+
+        public AsnElt Encode() {
+
+            AsnElt parameters = AsnElt.Decode(Parameters);
+
+            return AsnElt.Make(
+                AsnElt.SEQUENCE, new AsnElt[] { 
+                    AsnElt.MakeOID(Algorithm.Value),
+                    parameters}
+                );
+        }
+    }
+}
