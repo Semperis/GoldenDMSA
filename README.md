@@ -2,7 +2,7 @@
 
 This tool exploits a new attack against delegated Managed Service Accounts called the "Golden DMSA" attack. The technique allows attackers to generate passwords for all associated dMSAs offline. 
 
-Additional information is available in this post [title](https://www.semperis.com/blog/golden-dmsa-what-is-dmsa-authentication-bypass/).
+Additional information is available in this post [golden dMSA](https://www.semperis.com/blog/golden-dmsa-what-is-dmsa-authentication-bypass/).
 
 
 ## Attack steps
@@ -85,3 +85,4 @@ Disclaimer: This project is licensed under the terms of the BSD 3-Clause license
 ## Reference
 
 - https://github.com/Semperis/GoldenGMSA
+- https://www.semperis.com/blog/golden-dmsa-what-is-dmsa-authentication-bypass/
